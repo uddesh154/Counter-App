@@ -1,0 +1,52 @@
+.history-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.history-list li {
+    margin: 6px 0;
+    display: grid;
+    grid-template-columns: 24px 1fr auto;
+    gap: 8px;
+    align-items: baseline;
+}
+
+.idx {
+    color: #9ca3af;
+}
+
+.label {
+    font-weight: 500;
+}
+
+.time {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.clear {
+    background: #fee2e2;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.empty {
+    color: #9ca3af;
+    margin: 8px 0 0;
+}

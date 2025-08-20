@@ -1,0 +1,10 @@
+<div class="counter-card">
+    <h2>Counter</h2>
+    <label class="counter-label" for="counterValue">Current value</label>
+    <input id="counterValue" class="counter-input" [value]="count" readonly />
+    <div class="btn-row">
+        <button class="btn inc" (click)="onInc()">➕ Increment</button>
+        <button class="btn dec" (click)="onDec()">➖ Decrement</button>
+        <button class="btn reset" (click)="onReset()">🔄 Reset</button>
+    </div>
+</div>

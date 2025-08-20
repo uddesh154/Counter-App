@@ -1,0 +1,18 @@
+<div class="history-card">
+    <div class="history-header">
+        <h2>History</h2>
+        <button class="btn clear" (click)="onClear && onClear()">🧹 Clear History</button>
+    </div>
+
+
+    <ol class="history-list">
+        <li *ngFor="let h of items; index as i">
+            <span class="idx">{{ i + 1 }}.</span>
+            <span class="label">{{ h.label }}</span>
+            <span class="time">{{ h.timestamp | date:'short' }}</span>
+        </li>
+    </ol>
+
+
+    <p *ngIf="!items?.length" class="empty">No history yet. Try the buttons above!</p>
+</div>
